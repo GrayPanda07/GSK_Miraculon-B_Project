@@ -1,56 +1,133 @@
-# README: Clinical Study Dataset (`clinical-study.xlsx`)
+# Clinical Study Dataset
 
-## Overview
+This folder contains the primary clinical trial dataset used throughout the GSK DigData Step Up Career Challenge.
 
-The `clinical-study.xlsx` file contains patient-level data collected during a clinical trial to evaluate the effectiveness of the cancer treatment Miraculon-B. This dataset is used to assess treatment responses and identify potential sub-group variations among patients.
-
----
-
-## Data Description
-
-The dataset consists of **772 rows** (patients) and **7 columns** (variables). Each row represents a unique patient, while the columns capture patient characteristics and trial outcomes.
-
-### Columns:
-- **`subject_id`**: Unique identifier for each patient.
-- **`sex`**: Patient's gender (`Male` or `Female`).
-- **`age`**: Patient's age (in years).
-- **`weight`**: Patient's weight (in kilograms).
-- **`height`**: Patient's height (in metres).
-- **`trt_grp`**: Treatment group:
-  - `Drug`: Patients receiving Miraculon-B.
-  - `Control`: Patients receiving the standard of care.
-- **`response`**: Treatment response outcome:
-  - `Yes`: Tumour responded favourably (e.g., shrinkage).
-  - `No`: Tumour did not respond favourably (e.g., remained the same or grew).
+The dataset simulates data collected from a late-phase oncology clinical trial investigating the effectiveness of a fictional treatment called **Miraculon-B** compared to the current standard of care.
 
 ---
 
-## Usage
+# Dataset Information
 
-This dataset is central to analysing:
-1. **Efficacy of Miraculon-B**: Compare treatment outcomes (`response`) between `Drug` and `Control` groups.
-2. **Sub-group Analysis**: Investigate how demographic and physical factors (e.g., `age`, `weight`, `height`, `sex`) influence treatment response.
+## File Name
+`clinical-study.csv`
 
----
+## Dataset Type
+Clinical trial patient dataset
 
-## Accessing the Dataset
+## Number of Rows
+772 patient records
 
-The `clinical-study.xlsx` dataset is not publicly accessible. To request access, please email:
-
-**[noikovitcha@gmail.com](mailto:noikovitcha@gmail.com)**
-
-When emailing, include:
-- Your full name.
-- The purpose of your request.
-- Your organisation or academic affiliation (if applicable).
+## Number of Columns
+7 variables
 
 ---
 
-## Notes
+# Dataset Purpose
 
-- **Duplicates**: The dataset may contain duplicate rows. These should be removed before analysis.
-- **Paediatric Data**: Rows with patients under 18 should be excluded from the analysis.
-- **Missing Values**: A small number of `NA` values may exist and should be handled appropriately during data cleaning.
+The dataset was used to:
 
-  ---
-This file is part of the GSK "Step Up" Career Challenge resources.
+- Analyse treatment effectiveness
+- Compare response rates between treatment groups
+- Explore patient characteristics linked to treatment response
+- Perform subgroup analysis
+- Create visualisations and presentations
+- Support exploratory and statistical analysis workflows
+
+---
+
+# Column Dictionary
+
+| Column Name | Description |
+|---|---|
+| subject_id | Unique patient identifier |
+| sex | Patient sex |
+| age | Patient age |
+| weight | Patient weight |
+| height | Patient height |
+| trt_grp | Treatment group (Miraculon-B or Control) |
+| response | Whether the patient responded to treatment |
+
+---
+
+# Response Definition
+
+Patients were classified as:
+
+- **Responder (Y)** → Tumour shrank during treatment
+- **Non-responder (N)** → Tumour remained stable or progressed
+
+---
+
+# Data Preparation Tasks
+
+As part of the challenge, the dataset required preprocessing and cleaning before analysis.
+
+Tasks included:
+
+- Removing duplicate patient records
+- Filtering paediatric patients (under 18)
+- Handling missing values
+- Creating BMI variables
+- Preparing the dataset for merging with biomarker data
+
+---
+
+# Related Dataset
+
+This dataset was merged with:
+
+`protein-levels.csv`
+
+The protein dataset contained biomarker concentration values used to investigate whether protein levels could predict treatment response.
+
+The merge was performed using the patient identifier columns.
+
+---
+
+# Example Analysis Questions
+
+The dataset was used to investigate questions such as:
+
+- Does Miraculon-B outperform the standard of care?
+- Are responders generally younger or older?
+- Does BMI impact treatment response?
+- Can protein concentration predict response likelihood?
+- Which patient subgroups benefit most from treatment?
+
+---
+
+# Technologies Used
+
+This dataset was analysed using:
+
+- Python
+- R
+- Excel
+- Google Sheets
+
+Common libraries and tools included:
+
+- pandas
+- matplotlib
+- seaborn
+- ggplot2
+- Pivot Tables
+- XLOOKUP
+
+---
+
+# Data Disclaimer
+
+This dataset is fictional and was provided as part of the GSK DigData Step Up Career Challenge.
+
+The data is intended for educational and portfolio purposes only.
+
+The dataset should not be redistributed outside this repository without permission from the original challenge providers.
+
+---
+
+# Source
+
+GSK DigData Step Up Career Challenge
+
+Challenge materials described the dataset as part of a simulated late-phase oncology clinical trial analysis project focused on evaluating Miraculon-B treatment outcomes.
