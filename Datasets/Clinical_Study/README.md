@@ -70,17 +70,6 @@ Tasks included:
 - Creating BMI variables
 - Preparing the dataset for merging with biomarker data
 
----
-
-# Related Dataset
-
-This dataset was merged with:
-
-`protein-levels.csv`
-
-The protein dataset contained biomarker concentration values used to investigate whether protein levels could predict treatment response.
-
-The merge was performed using the patient identifier columns.
 
 ---
 
