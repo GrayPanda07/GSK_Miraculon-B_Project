@@ -1,47 +1,119 @@
-# README: Protein Levels Dataset (`protein-levels.xlsx`)
+# Protein Levels Dataset
 
-## Overview
+This folder contains the biomarker dataset used in the GSK DigData Step Up Career Challenge.
 
-The `protein-levels.xlsx` file contains data related to the concentration of a specific protein in patients' blood, hypothesised to act as a predictive biomarker for treatment response and adverse events in the clinical trial for Miraculon-B. This dataset supports subgroup analyses to identify patients most likely to benefit from the treatment.
+The dataset contains protein concentration values collected from patients participating in a fictional oncology clinical trial investigating the treatment **Miraculon-B**.
 
----
-
-## Data Description
-
-The dataset consists of **768 rows** (patients) and **2 columns** (variables). Each row corresponds to a patient included in the clinical trial.
-
-### Columns:
-- **`participant_id`**: Unique identifier for each patient.
-- **`protein_concentration`**: Protein concentration in the patient's blood (in micrograms per litre, `µg/L`).
+The protein concentration values were analysed to determine whether the biomarker could help predict patient response to treatment.
 
 ---
 
-## Usage
+# Dataset Information
 
-This dataset is used for:
-1. **Biomarker Analysis**: Investigating the relationship between protein levels and treatment response or adverse events.
-2. **Predictive Modelling**: Assessing whether protein concentration can predict which patients are most likely to benefit from Miraculon-B.
+## File Name
+`protein-levels.csv`
 
----
+## Dataset Type
+Clinical biomarker dataset
 
-## Accessing the Dataset
+## Number of Rows
+768 patient records
 
-The `protein-levels.xlsx` dataset is not publicly accessible. To request access, please email:
-
-**[noikovitcha@gmail.com](mailto:noikovitcha@gmail.com)**
-
-When emailing, include:
-- Your full name.
-- The purpose of your request.
-- Your organisation or academic affiliation (if applicable).
+## Number of Columns
+2 variables
 
 ---
 
-## Notes
+# Dataset Purpose
 
-- **Merge with Clinical Data**: This dataset can be merged with the `clinical-study.xlsx` dataset using the `participant_id` column to perform comprehensive analyses.
-- **Data Cleaning**: Ensure no missing or duplicate values before analysis.
+This dataset was used to:
+
+- Investigate predictive biomarkers
+- Analyse relationships between protein concentration and treatment response
+- Support subgroup analysis
+- Merge with the primary clinical trial dataset
+- Explore whether biomarker levels could help identify patients most likely to benefit from treatment
 
 ---
 
-This file is part of the GSK "Step Up" Career Challenge resources.
+# Column Dictionary
+
+| Column Name | Description |
+|---|---|
+| participant_id | Unique patient identifier |
+| protein_concentration | Concentration of a blood protein biomarker (ug/L) |
+
+---
+
+# Biomarker Context
+
+The protein concentration variable represents a potential predictive biomarker identified during the clinical trial.
+
+Predictive biomarkers can help determine:
+
+- Which patients are more likely to respond to treatment
+- Which patients may derive greater clinical benefit
+- How treatment outcomes differ across patient populations
+
+The challenge focused on exploring whether higher or lower protein concentrations were associated with treatment response.
+
+---
+
+# Example Analysis Questions
+
+The dataset was used to investigate questions such as:
+
+- Do responders have different protein concentrations compared to non-responders?
+- Can protein concentration predict treatment success?
+- Is protein concentration linked to patient subgroups?
+- Does biomarker concentration differ between treatment groups?
+
+---
+
+# Example Analytical Tasks
+
+Typical analytical tasks included:
+
+- Merging datasets using XLOOKUP or joins
+- Calculating summary statistics
+- Creating boxplots and comparative charts
+- Exploring response distributions
+- Investigating biomarker trends
+
+---
+
+# Technologies Used
+
+This dataset was analysed using:
+
+- Python
+- R
+- Excel
+- Google Sheets
+
+Common tools and libraries included:
+
+- pandas
+- seaborn
+- matplotlib
+- ggplot2
+- Pivot Tables
+- XLOOKUP
+
+---
+
+# Data Disclaimer
+
+This dataset is fictional and was provided as part of the GSK DigData Step Up Career Challenge.
+
+The data is intended for educational and portfolio purposes only.
+
+The dataset should not be redistributed outside this repository without permission from the original challenge providers.
+
+---
+
+# Source
+
+GSK DigData Step Up Career Challenge
+
+The challenge materials described this dataset as a biomarker dataset linked to response prediction within a simulated late-phase oncology clinical trial.
